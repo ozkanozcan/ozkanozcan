@@ -1,0 +1,66 @@
+# Profil kartını (dark_mode.svg / light_mode.svg), bağlantı butonlarını ve
+# Pac-Man katkı grafiğini her gün yeniden üretip repoya commit'ler.
+name: Profili Güncelle
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # her gün 07:00 (TR)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "profile.json"
+      - "assets/**"
+      - "tools/**"
+      - ".github/workflows/profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: GitHub istatistiklerini çek
+        env:
+          # Özel repo katkılarını da saymak için read:user yetkili bir PAT'i
+          # STATS_TOKEN secret'ı olarak ekleyebilirsin; yoksa public veriler kullanılır.
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python tools/fetch_stats.py
+
+      - name: Kartı ve butonları üret
+        run: |
+          python tools/build_card.py
+          python tools/build_links.py
+
+      - name: Pac-Man katkı grafiğini üret
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+
+      - name: Pac-Man SVG'lerini köke taşı
+        run: |
+          cp dist/pacman-contribution-graph.svg pacman_light.svg
+          cp dist/pacman-contribution-graph-dark.svg pacman_dark.svg
+          rm -rf dist
+
+      - name: Bu sırada gelen commit'lerin üstüne al
+        run: git pull --rebase --autostash origin main
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: profil kartını güncelle"
+          branch: main
+          file_pattern: "*.svg cache/*.json"

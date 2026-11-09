@@ -1,0 +1,52 @@
+{
+  "username": "ozkanozcan",
+  "prompt": "ozkan@ozcan",
+  "site": "https://www.ozkanozcan.com",
+  "accent": { "dark": "#FF2D20", "light": "#D9230F" },
+  "sections": [
+    {
+      "title": null,
+      "rows": [
+        ["OS", "macOS, Ubuntu Server"],
+        ["Uptime", "{uptime}"],
+        ["Host", "Özcan Yazılım"],
+        ["Location", "İstanbul, Türkiye"],
+        ["Kernel", "Full Stack Developer"],
+        ["IDE", "PhpStorm, VS Code, Claude Code"]
+      ]
+    },
+    {
+      "title": null,
+      "rows": [
+        ["Languages.Programming", "PHP, JavaScript, Python, Swift"],
+        ["Languages.Web", "HTML, CSS, Blade, SQL"],
+        ["Frameworks", "Laravel, Livewire, Vue, Nuxt, Tailwind"],
+        ["Languages.Real", "Türkçe, English"]
+      ]
+    },
+    {
+      "title": null,
+      "rows": [
+        ["Open.Source", "laravel-telegram, isbank-3d-sanal-pos"],
+        ["Hobbies.Software", "Laravel paketleri, otomasyon"]
+      ]
+    },
+    {
+      "title": "Contact",
+      "rows": [
+        ["Web", "ozkanozcan.com"],
+        ["X", "@ozkanozcan"],
+        ["GitHub", "github.com/ozkanozcan"]
+      ]
+    },
+    {
+      "title": "GitHub Stats",
+      "rows": "stats"
+    }
+  ],
+  "links": [
+    { "label": "WEBSITE", "icon": "globe", "url": "https://www.ozkanozcan.com" },
+    { "label": "X / TWITTER", "icon": "x", "url": "https://x.com/ozkanozcan" },
+    { "label": "E-POSTA", "icon": "mail", "url": "mailto:EPOSTA@ADRESINIZ.com" }
+  ]
+}
