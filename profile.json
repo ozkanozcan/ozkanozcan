@@ -102,6 +102,11 @@
       "label": "X / TWITTER",
       "icon": "x",
       "url": "https://x.com/ozkanozcan"
+    },
+    {
+      "label": "E-POSTA",
+      "icon": "mail",
+      "url": "mailto:ozkanozcan@gmail.com"
     }
   ]
 }
