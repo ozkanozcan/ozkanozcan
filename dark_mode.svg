@@ -49,7 +49,7 @@ text, tspan {white-space: pre;}
 <text fill="#c9d1d9" font-size="16px">
 <tspan x="430" y="50"><tspan class="title">ozkan@ozcan</tspan> <tspan class="cc">————————————————————————————————————————————</tspan></tspan>
 <tspan x="430" y="70"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ............................. </tspan><tspan class="value">macOS, Ubuntu Server</tspan></tspan>
-<tspan x="430" y="90"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> .......................... </tspan><tspan class="value">16 yıl, 1 ay, 9 gün</tspan></tspan>
+<tspan x="430" y="90"><tspan class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">16 yıl, 1 ay, 10 gün</tspan></tspan>
 <tspan x="430" y="110"><tspan class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> .................................. </tspan><tspan class="value">Özcan Yazılım</tspan></tspan>
 <tspan x="430" y="130"><tspan class="cc">. </tspan><tspan class="key">Location</tspan>:<tspan class="cc"> .......................... </tspan><tspan class="value">İstanbul, Türkiye</tspan></tspan>
 <tspan x="430" y="150"><tspan class="cc">. </tspan><tspan class="key">Kernel</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">Full Stack Developer</tspan></tspan>
@@ -68,8 +68,8 @@ text, tspan {white-space: pre;}
 <tspan x="430" y="410"><tspan class="cc">. </tspan><tspan class="key">GitHub</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">github.com/ozkanozcan</tspan></tspan>
 <tspan x="430" y="430">- <tspan class="title">GitHub Stats</tspan> <tspan class="cc">—————————————————————————————————————————</tspan></tspan>
 <tspan x="430" y="450"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value">12</tspan> | <tspan class="key">Stars</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">10</tspan></tspan>
-<tspan x="430" y="470"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">8.177</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">18</tspan></tspan>
-<tspan x="430" y="490"><tspan class="cc">. </tspan><tspan class="key">Katkı</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">8.238</tspan> | <tspan class="key">2026</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">4.210</tspan></tspan>
+<tspan x="430" y="470"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">8.179</tspan> | <tspan class="key">Followers</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">18</tspan></tspan>
+<tspan x="430" y="490"><tspan class="cc">. </tspan><tspan class="key">Katkı</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">8.240</tspan> | <tspan class="key">2026</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">4.212</tspan></tspan>
 <tspan x="430" y="510" class="key">❯ </tspan><tspan class="cursor" fill="#c9d1d9">█</tspan>
 </text>
 </svg>
